@@ -1,9 +1,5 @@
 <template>
-  <Disclosure
-    v-slot="{ open }"
-    as="nav"
-    class="bg-gray-800"
-  >
+  <Disclosure v-slot="{ open }" as="nav" class="bg-gray-800">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -13,16 +9,8 @@
           >
             <span class="absolute -inset-0.5" />
             <span class="sr-only">Open main menu</span>
-            <Bars3Icon
-              v-if="!open"
-              class="block h-6 w-6"
-              aria-hidden="true"
-            />
-            <XMarkIcon
-              v-else
-              class="block h-6 w-6"
-              aria-hidden="true"
-            />
+            <Bars3Icon v-if="!open" class="block h-6 w-6" aria-hidden="true" />
+            <XMarkIcon v-else class="block h-6 w-6" aria-hidden="true" />
           </DisclosureButton>
         </div>
         <div
@@ -33,7 +21,7 @@
               class="h-8 w-auto"
               src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
               alt="Your Company"
-            >
+            />
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
@@ -48,7 +36,8 @@
                   'rounded-md px-3 py-2 text-sm font-medium'
                 ]"
                 :aria-current="item.current ? 'page' : undefined"
-              >{{ item.name }}</a>
+                >{{ item.name }}</a
+              >
             </div>
           </div>
         </div>
@@ -61,17 +50,11 @@
           >
             <span class="absolute -inset-1.5" />
             <span class="sr-only">View notifications</span>
-            <BellIcon
-              class="h-6 w-6"
-              aria-hidden="true"
-            />
+            <BellIcon class="h-6 w-6" aria-hidden="true" />
           </button>
 
           <!-- Profile dropdown -->
-          <Menu
-            as="div"
-            class="relative ml-3"
-          >
+          <Menu as="div" class="relative ml-3">
             <div>
               <MenuButton
                 class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -82,7 +65,7 @@
                   class="h-8 w-8 rounded-full"
                   src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
-                >
+                />
               </MenuButton>
             </div>
             <transition
@@ -103,7 +86,8 @@
                       active ? 'bg-gray-100' : '',
                       'block px-4 py-2 text-sm text-gray-700'
                     ]"
-                  >Your Profile</a>
+                    >Your Profile</a
+                  >
                 </MenuItem>
                 <MenuItem v-slot="{ active }">
                   <a
@@ -112,7 +96,8 @@
                       active ? 'bg-gray-100' : '',
                       'block px-4 py-2 text-sm text-gray-700'
                     ]"
-                  >Settings</a>
+                    >Settings</a
+                  >
                 </MenuItem>
                 <MenuItem v-slot="{ active }">
                   <a
@@ -121,7 +106,8 @@
                       active ? 'bg-gray-100' : '',
                       'block px-4 py-2 text-sm text-gray-700'
                     ]"
-                  >Sign out</a>
+                    >Sign out</a
+                  >
                 </MenuItem>
               </MenuItems>
             </transition>

@@ -1,13 +1,6 @@
 <template>
-  <TransitionRoot
-    as="template"
-    :show="open"
-  >
-    <Dialog
-      as="div"
-      class="relative z-10"
-      @close="open = false"
-    >
+  <TransitionRoot as="template" :show="open">
+    <Dialog as="div" class="relative z-10" @close="open = false">
       <TransitionChild
         as="template"
         enter="ease-out duration-300"

@@ -8,11 +8,7 @@
     ```
   -->
   <div class="min-h-full">
-    <Disclosure
-      v-slot="{ open }"
-      as="nav"
-      class="bg-gray-800"
-    >
+    <Disclosure v-slot="{ open }" as="nav" class="bg-gray-800">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
           <div class="flex items-center">
@@ -21,7 +17,7 @@
                 class="h-8 w-8"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                 alt="Your Company"
-              >
+              />
             </div>
             <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4">
@@ -36,7 +32,8 @@
                     'rounded-md px-3 py-2 text-sm font-medium'
                   ]"
                   :aria-current="item.current ? 'page' : undefined"
-                >{{ item.name }}</a>
+                  >{{ item.name }}</a
+                >
               </div>
             </div>
           </div>
@@ -48,17 +45,11 @@
               >
                 <span class="absolute -inset-1.5" />
                 <span class="sr-only">View notifications</span>
-                <BellIcon
-                  class="h-6 w-6"
-                  aria-hidden="true"
-                />
+                <BellIcon class="h-6 w-6" aria-hidden="true" />
               </button>
 
               <!-- Profile dropdown -->
-              <Menu
-                as="div"
-                class="relative ml-3"
-              >
+              <Menu as="div" class="relative ml-3">
                 <div>
                   <MenuButton
                     class="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -69,7 +60,7 @@
                       class="h-8 w-8 rounded-full"
                       :src="user.imageUrl"
                       alt=""
-                    >
+                    />
                   </MenuButton>
                 </div>
                 <transition
@@ -94,7 +85,8 @@
                           active ? 'bg-gray-100' : '',
                           'block px-4 py-2 text-sm text-gray-700'
                         ]"
-                      >{{ item.name }}</a>
+                        >{{ item.name }}</a
+                      >
                     </MenuItem>
                   </MenuItems>
                 </transition>
@@ -113,11 +105,7 @@
                 class="block h-6 w-6"
                 aria-hidden="true"
               />
-              <XMarkIcon
-                v-else
-                class="block h-6 w-6"
-                aria-hidden="true"
-              />
+              <XMarkIcon v-else class="block h-6 w-6" aria-hidden="true" />
             </DisclosureButton>
           </div>
         </div>
@@ -144,11 +132,7 @@
         <div class="border-t border-gray-700 pb-3 pt-4">
           <div class="flex items-center px-5">
             <div class="flex-shrink-0">
-              <img
-                class="h-10 w-10 rounded-full"
-                :src="user.imageUrl"
-                alt=""
-              >
+              <img class="h-10 w-10 rounded-full" :src="user.imageUrl" alt="" />
             </div>
             <div class="ml-3">
               <div class="text-base font-medium leading-none text-white">
@@ -164,10 +148,7 @@
             >
               <span class="absolute -inset-1.5" />
               <span class="sr-only">View notifications</span>
-              <BellIcon
-                class="h-6 w-6"
-                aria-hidden="true"
-              />
+              <BellIcon class="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
           <div class="mt-3 space-y-1 px-2">

@@ -1,8 +1,5 @@
 <template>
-  <Listbox
-    v-model="selected"
-    as="div"
-  >
+  <Listbox v-model="selected" as="div">
     <ListboxLabel class="block text-sm font-medium leading-6 text-gray-900">
       Assigned to
     </ListboxLabel>
@@ -15,16 +12,13 @@
             :src="form.avatar"
             alt=""
             class="h-5 w-5 flex-shrink-0 rounded-full"
-          >
+          />
           <span class="ml-3 block truncate">{{ form.name }}</span>
         </span>
         <span
           class="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-2"
         >
-          <ChevronUpDownIcon
-            class="h-5 w-5 text-gray-400"
-            aria-hidden="true"
-          />
+          <ChevronUpDownIcon class="h-5 w-5 text-gray-400" aria-hidden="true" />
         </span>
       </ListboxButton>
 
@@ -54,13 +48,14 @@
                   :src="person.avatar"
                   alt=""
                   class="h-5 w-5 flex-shrink-0 rounded-full"
-                >
+                />
                 <span
                   :class="[
                     selected ? 'font-semibold' : 'font-normal',
                     'ml-3 block truncate'
                   ]"
-                >{{ person.name }}</span>
+                  >{{ person.name }}</span
+                >
               </div>
 
               <span
@@ -70,10 +65,7 @@
                   'absolute inset-y-0 right-0 flex items-center pr-4'
                 ]"
               >
-                <CheckIcon
-                  class="h-5 w-5"
-                  aria-hidden="true"
-                />
+                <CheckIcon class="h-5 w-5" aria-hidden="true" />
               </span>
             </li>
           </ListboxOption>

@@ -16,9 +16,7 @@
   <form>
     <div class="space-y-12">
       <div class="border-b border-gray-900/10 pb-12">
-        <h2 class="text-base font-semibold leading-7 text-gray-900">
-          Profile
-        </h2>
+        <h2 class="text-base font-semibold leading-7 text-gray-900">Profile</h2>
         <p class="mt-1 text-sm leading-6 text-gray-600">
           This information will be displayed publicly so be careful what you
           share.
@@ -29,14 +27,16 @@
             <label
               for="username"
               class="block text-sm font-medium leading-6 text-gray-900"
-            >Username</label>
+              >Username</label
+            >
             <div class="mt-2">
               <div
                 class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
               >
                 <span
                   class="flex select-none items-center pl-3 text-gray-500 sm:text-sm"
-                >workcation.com/</span>
+                  >workcation.com/</span
+                >
                 <input
                   id="username"
                   type="text"
@@ -44,7 +44,7 @@
                   autocomplete="username"
                   class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                   placeholder="janesmith"
-                >
+                />
               </div>
             </div>
           </div>
@@ -53,7 +53,8 @@
             <label
               for="about"
               class="block text-sm font-medium leading-6 text-gray-900"
-            >About</label>
+              >About</label
+            >
             <div class="mt-2">
               <textarea
                 id="about"
@@ -71,7 +72,8 @@
             <label
               for="photo"
               class="block text-sm font-medium leading-6 text-gray-900"
-            >Photo</label>
+              >Photo</label
+            >
             <div class="mt-2 flex items-center gap-x-3">
               <UserCircleIcon
                 class="h-12 w-12 text-gray-300"
@@ -90,7 +92,8 @@
             <label
               for="cover-photo"
               class="block text-sm font-medium leading-6 text-gray-900"
-            >Cover photo</label>
+              >Cover photo</label
+            >
             <div
               class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10"
             >
@@ -110,11 +113,9 @@
                       name="file-upload"
                       type="file"
                       class="sr-only"
-                    >
+                    />
                   </label>
-                  <p class="pl-1">
-                    or drag and drop
-                  </p>
+                  <p class="pl-1">or drag and drop</p>
                 </div>
                 <p class="text-xs leading-5 text-gray-600">
                   PNG, JPG, GIF up to 10MB
@@ -138,7 +139,8 @@
             <label
               for="first-name"
               class="block text-sm font-medium leading-6 text-gray-900"
-            >First name</label>
+              >First name</label
+            >
             <div class="mt-2">
               <input
                 id="first-name"
@@ -146,7 +148,7 @@
                 name="first-name"
                 autocomplete="given-name"
                 class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              >
+              />
             </div>
           </div>
 
@@ -154,7 +156,8 @@
             <label
               for="last-name"
               class="block text-sm font-medium leading-6 text-gray-900"
-            >Last name</label>
+              >Last name</label
+            >
             <div class="mt-2">
               <input
                 id="last-name"
@@ -162,7 +165,7 @@
                 name="last-name"
                 autocomplete="family-name"
                 class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              >
+              />
             </div>
           </div>
 
@@ -170,7 +173,8 @@
             <label
               for="email"
               class="block text-sm font-medium leading-6 text-gray-900"
-            >Email address</label>
+              >Email address</label
+            >
             <div class="mt-2">
               <input
                 id="email"
@@ -178,7 +182,7 @@
                 type="email"
                 autocomplete="email"
                 class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              >
+              />
             </div>
           </div>
 
@@ -186,7 +190,8 @@
             <label
               for="country"
               class="block text-sm font-medium leading-6 text-gray-900"
-            >Country</label>
+              >Country</label
+            >
             <div class="mt-2">
               <select
                 id="country"
@@ -205,7 +210,8 @@
             <label
               for="street-address"
               class="block text-sm font-medium leading-6 text-gray-900"
-            >Street address</label>
+              >Street address</label
+            >
             <div class="mt-2">
               <input
                 id="street-address"
@@ -213,7 +219,7 @@
                 name="street-address"
                 autocomplete="street-address"
                 class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              >
+              />
             </div>
           </div>
 
@@ -221,7 +227,8 @@
             <label
               for="city"
               class="block text-sm font-medium leading-6 text-gray-900"
-            >City</label>
+              >City</label
+            >
             <div class="mt-2">
               <input
                 id="city"
@@ -229,7 +236,7 @@
                 name="city"
                 autocomplete="address-level2"
                 class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              >
+              />
             </div>
           </div>
 
@@ -237,7 +244,8 @@
             <label
               for="region"
               class="block text-sm font-medium leading-6 text-gray-900"
-            >State / Province</label>
+              >State / Province</label
+            >
             <div class="mt-2">
               <input
                 id="region"
@@ -245,7 +253,7 @@
                 name="region"
                 autocomplete="address-level1"
                 class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              >
+              />
             </div>
           </div>
 
@@ -253,7 +261,8 @@
             <label
               for="postal-code"
               class="block text-sm font-medium leading-6 text-gray-900"
-            >ZIP / Postal code</label>
+              >ZIP / Postal code</label
+            >
             <div class="mt-2">
               <input
                 id="postal-code"
@@ -261,7 +270,7 @@
                 name="postal-code"
                 autocomplete="postal-code"
                 class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              >
+              />
             </div>
           </div>
         </div>
@@ -289,13 +298,12 @@
                     name="comments"
                     type="checkbox"
                     class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
-                  >
+                  />
                 </div>
                 <div class="text-sm leading-6">
-                  <label
-                    for="comments"
-                    class="font-medium text-gray-900"
-                  >Comments</label>
+                  <label for="comments" class="font-medium text-gray-900"
+                    >Comments</label
+                  >
                   <p class="text-gray-500">
                     Get notified when someones posts a comment on a posting.
                   </p>
@@ -308,13 +316,12 @@
                     name="candidates"
                     type="checkbox"
                     class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
-                  >
+                  />
                 </div>
                 <div class="text-sm leading-6">
-                  <label
-                    for="candidates"
-                    class="font-medium text-gray-900"
-                  >Candidates</label>
+                  <label for="candidates" class="font-medium text-gray-900"
+                    >Candidates</label
+                  >
                   <p class="text-gray-500">
                     Get notified when a candidate applies for a job.
                   </p>
@@ -327,13 +334,12 @@
                     name="offers"
                     type="checkbox"
                     class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
-                  >
+                  />
                 </div>
                 <div class="text-sm leading-6">
-                  <label
-                    for="offers"
-                    class="font-medium text-gray-900"
-                  >Offers</label>
+                  <label for="offers" class="font-medium text-gray-900"
+                    >Offers</label
+                  >
                   <p class="text-gray-500">
                     Get notified when a candidate accepts or rejects an offer.
                   </p>
@@ -355,11 +361,12 @@
                   name="push-notifications"
                   type="radio"
                   class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
-                >
+                />
                 <label
                   for="push-everything"
                   class="block text-sm font-medium leading-6 text-gray-900"
-                >Everything</label>
+                  >Everything</label
+                >
               </div>
               <div class="flex items-center gap-x-3">
                 <input
@@ -367,11 +374,12 @@
                   name="push-notifications"
                   type="radio"
                   class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
-                >
+                />
                 <label
                   for="push-email"
                   class="block text-sm font-medium leading-6 text-gray-900"
-                >Same as email</label>
+                  >Same as email</label
+                >
               </div>
               <div class="flex items-center gap-x-3">
                 <input
@@ -379,11 +387,12 @@
                   name="push-notifications"
                   type="radio"
                   class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
-                >
+                />
                 <label
                   for="push-nothing"
                   class="block text-sm font-medium leading-6 text-gray-900"
-                >No push notifications</label>
+                  >No push notifications</label
+                >
               </div>
             </div>
           </fieldset>

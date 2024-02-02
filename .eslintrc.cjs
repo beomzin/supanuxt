@@ -4,9 +4,11 @@ module.exports = {
     node: true
   },
   extends: [
+    'eslint:recommended',
     '@nuxt/eslint-config',
     'plugin:@typescript-eslint/recommended',
-    'plugin:vue/vue3-essential'
+    'plugin:vue/vue3-essential',
+    'plugin:prettier/recommended'
   ],
   overrides: [
     {
@@ -28,5 +30,5 @@ module.exports = {
   rules: {
     'vue/multi-word-component-names': 'off',
     '@typescript-eslint/no-unused-vars': 'off'
-  },
+  }
 }

@@ -1,9 +1,5 @@
 <template>
-  <Disclosure
-    v-slot="{ open }"
-    as="nav"
-    class="bg-gray-800"
-  >
+  <Disclosure v-slot="{ open }" as="nav" class="bg-gray-800">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -13,16 +9,8 @@
           >
             <span class="absolute -inset-0.5" />
             <span class="sr-only">Open main menu</span>
-            <Bars3Icon
-              v-if="!open"
-              class="block h-6 w-6"
-              aria-hidden="true"
-            />
-            <XMarkIcon
-              v-else
-              class="block h-6 w-6"
-              aria-hidden="true"
-            />
+            <Bars3Icon v-if="!open" class="block h-6 w-6" aria-hidden="true" />
+            <XMarkIcon v-else class="block h-6 w-6" aria-hidden="true" />
           </DisclosureButton>
         </div>
         <div
@@ -34,7 +22,7 @@
                 class="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                 alt="Supanuxt"
-              >
+              />
             </nuxt-link>
           </div>
           <div class="hidden sm:ml-6 sm:block">
