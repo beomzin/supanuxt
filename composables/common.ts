@@ -1,6 +1,6 @@
 import type { SearchParameters } from 'ofetch'
 
-const getBaseUrl = () => useRuntimeConfig().public.serverUrl
+const getBaseUrl = () => useRuntimeConfig().public.clientUrl
 
 export const fetch = {
   get: async (url: string, params?: SearchParameters) =>

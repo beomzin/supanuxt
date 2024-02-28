@@ -4,9 +4,7 @@ export default defineNuxtRouteMiddleware((to, from) => {
   const user = supabase.user()
   const whiteList = ['/', '/account/signin', '/account/signup']
 
-  let isWhiteList = false
-  isWhiteList = whiteList.includes(to.path)
-
+  const isWhiteList = whiteList.includes(to.path) || false
   if (isWhiteList) {
     if (user.value) return navigateTo('/main')
   } else {
