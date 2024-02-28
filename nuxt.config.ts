@@ -11,8 +11,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     // Public keys that are exposed to the client
     public: {
-      localUrl: process.env.LOCAL_URL,
-      apiUrl: process.env.API_BASE_URL
+      clientUrl: process.env.CLIENT_URL,
+      serverUrl: process.env.SERVER_URL
     }
   },
   supabase: {
