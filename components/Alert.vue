@@ -46,7 +46,7 @@
                       as="h3"
                       class="text-base font-semibold leading-6 text-gray-900"
                     >
-                      {{ message }}
+                      Alert
                     </DialogTitle>
                     <div class="mt-2">
                       <p class="text-sm text-gray-500">
@@ -86,11 +86,8 @@ import {
 } from '@headlessui/vue'
 import { ExclamationTriangleIcon } from '@heroicons/vue/24/outline'
 
-const props = defineProps({
-  message: String
-})
-
-const emit = defineEmits(['close'])
+const props = defineProps({ message: String })
+const emits = defineEmits(['close'])
 
 const open = ref(false)
 
@@ -99,7 +96,7 @@ watch(() => {
 })
 
 const close = () => {
-  emit('close')
+  emits('close')
   open.value = false
 }
 </script>
