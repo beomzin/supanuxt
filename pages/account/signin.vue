@@ -106,9 +106,9 @@ const submit = async () => {
     email: form.value.email,
     password: form.value.password
   })
-  console.log('SIGN IN ERROR ::', error?.message)
 
   if (data.session) await navigateTo('/main')
+  if (error) console.log('SIGN IN ERROR ::', error?.message)
 }
 </script>
 

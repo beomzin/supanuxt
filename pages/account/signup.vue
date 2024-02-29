@@ -145,9 +145,9 @@ const signUp = async () => {
     email: form.value.email,
     password: form.value.password
   })
-  console.log('SIGN UP ERROR ::', error?.message)
 
   if (!error) await submit(data.user)
+  else console.log('SIGN UP ERROR ::', error?.message)
 }
 
 const submit = async (user) => {
@@ -158,9 +158,9 @@ const submit = async (user) => {
       nationality: form.value.nationality
     }
   ])
-  console.log('INSERT ERROR ::', error?.message)
 
   if (!error) await navigateTo('signin')
+  else console.log('INSERT ERROR ::', error?.message)
 }
 </script>
 

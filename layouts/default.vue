@@ -95,8 +95,8 @@ const client = supabase.client()
 
 const submit = async () => {
   const { error } = await client.auth.signOut()
-  console.log('SIGN OUT ERROR ::', error?.message)
 
   if (!error) await navigateTo('/')
+  else console.log('SIGN OUT ERROR ::', error?.message)
 }
 </script>
