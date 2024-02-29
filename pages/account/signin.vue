@@ -90,6 +90,8 @@
         </nuxt-link>
       </p>
     </div>
+
+    <Alert :message="message" @close="closeAlert" />
   </div>
 </template>
 
@@ -100,6 +102,7 @@ definePageMeta({
 
 const client = supabase.client()
 const form = ref({ email: '', password: '' })
+const message = ref('')
 
 const submit = async () => {
   const { data, error } = await client.auth.signInWithPassword({
@@ -108,7 +111,13 @@ const submit = async () => {
   })
 
   if (data.session) await navigateTo('/main')
-  if (error) console.log('SIGN IN ERROR ::', error?.message)
+  if (error) {
+    message.value = error?.message
+    console.log('SIGN IN ERROR ::', error?.message)
+  }
+}
+const closeAlert = () => {
+  message.value = ''
 }
 </script>
 
