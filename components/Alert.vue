@@ -91,7 +91,7 @@ const emits = defineEmits(['close'])
 
 const open = ref(false)
 
-watch(() => {
+watchEffect(() => {
   open.value = !!props.message
 })
 
