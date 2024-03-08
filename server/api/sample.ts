@@ -1,4 +1,4 @@
-import sampleData from '../json/sample.json'
+import sampleData from '~/assets/json/sample.json'
 export default defineEventHandler((event) => {
   return sampleData
 })
