@@ -3,7 +3,12 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Supanuxt',
-      charset: 'utf-8'
+      charset: 'utf-8',
+      meta: [
+        { name: 'description', content: 'Sample model with Nuxt3 + Supabase' },
+        { name: 'author', content: 'beomzin' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
+      ]
     }
   },
   devtools: { enabled: true },
