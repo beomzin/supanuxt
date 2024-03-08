@@ -134,11 +134,9 @@ definePageMeta({
 })
 
 const client = supabase.client()
-const countries = ref([])
 const form = ref({ email: '', password: '', name: '', nationality: 'US' })
 
-const { data } = await client.from('countries').select('*')
-countries.value = data
+const { data: countries } = await client.from('countries').select('*')
 
 const signUp = async () => {
   const { data, error } = await client.auth.signUp({
