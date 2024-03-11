@@ -1,4 +1,1 @@
-export const getSampleData = async () => {
-  const { data } = await useFetch('/api/sample')
-  return data.value
-}
+export const getSampleData = async () => await useFetch('/api/sample')
