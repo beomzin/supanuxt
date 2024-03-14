@@ -63,7 +63,7 @@
               type="password"
               autocomplete="current-password"
               required=""
-              placeholder="******"
+              placeholder="••••••"
               class="block w-full p-2 mb-6 border-b-2 border-b-black outline-none focus:border-b-indigo-500"
             />
           </div>
